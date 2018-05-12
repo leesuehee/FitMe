@@ -9,20 +9,20 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      stats      :   true,
-      log        :   false,
+      stats      :  true,
+      log        :  false,
 
-      name       :   'Sue',
-      heightft   :   '5',
-      heightin   :   '6',
-      weight     :   '130',
-      BMI        :   '21',
+      name       :  'niffa',
+      heightft   :  '5', 
+      heightin   :  '6', 
+      weight     :  120, 
+      BMI        :  23, 
 
-      gender     :   'Female',
-      age        :   '23',
-      BMR        :   '1422',
-      goal       :   '120',
-      togo       :    10
+      gender     :  'Female', 
+      age        :  23, 
+      BMR        :  1300, 
+      goal       :  100,
+      togo       :  20,  
     }
   } 
 
@@ -64,14 +64,13 @@ class App extends React.Component {
     if (this.state.stats) {
       return (
         <div className ='app-started'>
-          <h3> FITNESS++</h3>
+          <h3> FitMe++</h3>
           <Log userStats={this.state}/>
         </div>
       )
     } else {
       return (
         <div className='app-container'>
-          <h3>WELCOME TO FITNESS++</h3>
           <h4>LET'S GET STARTED!</h4>
             <div className='goals'>
               Name:

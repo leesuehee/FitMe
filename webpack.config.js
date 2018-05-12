@@ -25,7 +25,6 @@ module.exports = {
             "stage-0",
             "react"
           ]
-          // presets:['react','es2015','babel-preset-env']
         }
       },
       {
