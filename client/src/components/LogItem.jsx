@@ -1,11 +1,10 @@
 import React from 'react';
 
 const LogItem = (props) => (
+
   <div className='item-info'>
-    {this.props.foodItem.map(item => {
-      <ul> {console.log(item)} </ul>
-      })
-    }
+    <ul className='name'>{props.info.foods[0].food_name}</ul>
+    <ul className='cal'>{props.info.foods[0].nf_calories}</ul>
     
   </div>
 )
