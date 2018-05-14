@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Log from './components/Log.jsx';
-// import Goal from './components/Goal.jsx';
-// import BMI from './components/BMI.jsx'
 import axios from 'axios';
 
 class App extends React.Component {
@@ -64,7 +62,7 @@ class App extends React.Component {
     if (this.state.stats) {
       return (
         <div className ='app-started'>
-          <h3> FitMe++</h3>
+          <h3> FitMe</h3>
           <Log userStats={this.state}/>
         </div>
       )
