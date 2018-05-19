@@ -1,14 +1,11 @@
 import React from 'react';
-// db joined here?
 
-let CalorieCart = (props) => {
-  // this component is a cart for adding food items only 
-  // prereq
-    // button on log to add the current foot item to the cart
-  
-  // reqs 
+let CalorieCart = (props) => (
+  <div className ='calorie-cart'>
+    <h4> Cart </h4>
 
-
-}
+    <h5> Remaining Calories: {this.props.calculateCalories('add', this.props.item)} </h5>   
+  </div>
+)
 
 export default CalorieCart;
