@@ -62,7 +62,7 @@ class App extends React.Component {
     if (this.state.stats) {
       return (
         <div className ='app-started'>
-          <h3> FitMe</h3>
+          <h3> FitMe </h3>
           <Log userStats={this.state}/>
         </div>
       )
