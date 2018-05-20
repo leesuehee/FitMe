@@ -2,15 +2,13 @@ import React from 'react';
 
 let CalorieCart = (props) => (
   <div className ='calorie-cart'>
-    <h4> Cart </h4>
-    
-    <button onClick={() => props.addItem()}> ADD </button>
-    <button> REMOVE </button>
+    <h3> Cart </h3>
+    {props.items.map(food => 
+      <ul> {food.name} {food.cal} calories 
+        <button onClick={()=>props.remove(food)}> REMOVE </button>
+      </ul>   
+    )}
   </div>
 )
 
 export default CalorieCart;
-// {(props.item !== undefined)?
-// <h5> Remaining Calories: {props.calculate('add', props.item)} </h5>:
-// <div></div>   
-// }
