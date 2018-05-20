@@ -8,6 +8,9 @@ let CalorieCart = (props) => (
         <button onClick={()=>props.remove(food)}> REMOVE </button>
       </ul>   
     )}
+
+    <h3> Remaining Calories: {props.remaining} </h3>
+    <p> TIP : add a tip here explaining how BMR works </p>
   </div>
 )
 
