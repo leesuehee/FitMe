@@ -9,6 +9,7 @@ class Log extends React.Component {
     super(props)
     this.state = {
       search   : null,
+      minutes  : null,
       cart     : [],
       remaining: this.props.userStats.BMR,
       foodItem : null,
@@ -72,10 +73,25 @@ class Log extends React.Component {
       remaining : adjustedCal
     })
   }
-
-  saveCart () {
+  saveCalCart () {
+  }
+  
+  exerciseInMin (event) {
+    console.log(parseInt(event.target.name) );
+    this.setState({
+      [event.target.name] : event.target.value
+    })
     // saves the listed items time stamped unto the database
+  }
+  
+  setMinutes (num) {
+    this.setState({
+      minutes : num
+    })
+  }
 
+  saveExerciseCart () {
+    // same as saveCalCart but for exercises
   }
 
   render () {
