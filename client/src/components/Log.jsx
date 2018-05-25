@@ -4,8 +4,6 @@ import LogItem from './LogItem.jsx';
 import CalorieCart from './CalorieCart.jsx';
 import * as pw from '../../../env.js';
 
-console.log(pw.default)
-
 class Log extends React.Component {
   constructor(props) {
     super(props)
@@ -65,7 +63,7 @@ class Log extends React.Component {
   removeItemFromCart (item) {
     let removeFromCart = this.state.cart;
     let index = this.state.cart.indexOf(item);
-    // let adjustedCal = this.state.remaining + 
+    let adjustedCal = this.state.remaining + item.cal;
 
     removeFromCart.splice(index,1);
 
