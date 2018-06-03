@@ -1,9 +1,9 @@
 // for exercise cart
 import React from 'react';
 
-let exerciseCart = (props) => (
-
-  <div className='exercise-info'>
+let ExerciseCart = (props) => (
+  <div className='exercise-cart'>
+    <h3> Exercise Cart</h3>
     <ul className='exercise-info'></ul>
     <ul className='exercise-cal'></ul>
     <div className='exercise-duration'>
@@ -14,4 +14,4 @@ let exerciseCart = (props) => (
   </div>
 )
 
-export default exerciseCart;
+export default ExerciseCart;

@@ -2,7 +2,7 @@ import React from 'react';
 
 let CalorieCart = (props) => (
   <div className ='calorie-cart'>
-    <h3> Cart </h3>
+    <h3> Calorie Cart </h3>
     {props.items.map(food => 
       <ul> {food.name} {food.cal} calories 
         <button onClick={()=>props.remove(food)}> REMOVE </button>

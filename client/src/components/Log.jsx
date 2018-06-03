@@ -2,6 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import LogItem from './LogItem.jsx';
 import CalorieCart from './CalorieCart.jsx';
+import ExerciseCart from './ExerciseCart.jsx';
+
 import * as pw from '../../../env.js';
 
 class Log extends React.Component {
@@ -122,10 +124,14 @@ class Log extends React.Component {
           <LogItem info={this.state.foodItem}/>:<div></div>
         }
 
-        <div className='calorie-cart'>
+        <div className='carts'>
           <CalorieCart items={this.state.cart} 
             remove={this.removeItemFromCart.bind(this)}
             remaining={this.state.remaining}
+          />
+
+          <ExerciseCart setMinutes={this.setMinutes.bind(this)}
+            exerciseInMin={this.exerciseInMin.bind(this)}
           />
           <button onClick={() => this.saveCart()}> SAVE CART </button>
         </div>
